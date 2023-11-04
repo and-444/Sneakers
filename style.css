@@ -1,0 +1,286 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+body {
+  font-family: 'Anonymous Pro', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+  max-width: 1160px;
+  margin: 0 auto;
+  height: 110px;
+  background: var(--white, #FFF);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin: 14px 0 0 2px;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.header__link > a {
+  margin-right: 17px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: all .1s linear;
+}
+
+.header__link:hover a {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.header__link:last-child a {
+  margin-right: 18px;
+}
+
+/*header*/
+
+/*content*/
+
+.content {
+  background: #F1F1F1;
+  padding-bottom: 24px;
+  border-top: 1px solid #A1A6B4;
+}
+
+.content__container {
+  max-width: 1162px;
+  margin: 0 auto;
+}
+
+.content__title {
+  padding: 51px 0 23px 0;
+  color: var(--black, #121723);
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.content__sneakers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+
+.content__cards {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 370px;
+}
+
+.content__content {
+  border: 1px solid transparent;
+  transition: all .1s linear;
+  border-radius: 12px;
+}
+
+.content__content:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 24px;
+  border-radius: 0px 0px 12px 12px;
+  background: var(--white, #FFF);
+}
+
+.content__subtitle {
+  color: var(--black, #121723);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.content__text {
+  color: var(--black, #121723);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* content */
+
+/* footer */
+
+.footer {
+  background: var(--black, #121723);
+}
+
+.footer__container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.footer__up {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(230, 232, 236, 0.40);
+}
+
+.footer__logo {
+  display: flex;
+  padding-top: 5px;
+}
+
+.footer__logo > a {
+  padding-right: 1px;
+}
+
+.footer__logo > .footer__and {
+  padding-left: 1px;
+  padding-right: 11px;
+}
+
+.footer__logo > .footer__k {
+  padding-right: 0;
+}
+
+.footer__logo > .footer__a {
+  padding-right: 0;
+}
+
+.footer__tilde {
+  position: relative;
+  top: 10px;
+}
+
+.footer__dot {
+  position: relative;
+  top: 17px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  padding: 27px 0 31px 0;
+}
+
+.footer__link > a {
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 17px;
+  transition: all .1s linear;
+}
+
+.footer__link:hover a {
+  color: var(--white, rgb(255, 255, 255, 0.6));
+}
+
+.footer__link:last-child a {
+  margin-right: 0;
+}
+
+.footer__text {
+  color: var(--text_gray, #A1A6B4);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  padding: 18px 21px;
+  margin-right: 22px
+}
+
+/* footer */
